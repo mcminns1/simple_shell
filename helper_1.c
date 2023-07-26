@@ -1,11 +1,11 @@
-"include "shell.h"
+#include "shell.h"
 
 /**
  * frere_recurrent_data - frerethe fileds needed each loop
  * @data: struct of the program's data
  * Return: Noting
  */
-void frere_recurrent_data(data_of_program *data)
+void free_recurrent_data(data_of_program *data)
 {
 	if (data->tokens)
 		free_array_of_pointers(data->tokens);
@@ -25,15 +25,15 @@ void frere_recurrent_data(data_of_program *data)
  * Return: Nothing
  */
 void free_all_data(data_of_program *data)
-	'
-	if (data->file_descriptor != 0)
 {
-	if (close(data->file_descriptor))
-		perror(data->program_name);
-}
-free_recrrent_data(data);
-free_array_of_pointers(data->env);
-free_array_of_pointers(data->alias_list);
+	if (data->file_descriptor != 0)
+	{
+		if (close(data->file_descriptor))
+			perror(data->program_name);
+	}
+	free_recurrent_data(data);
+	free_array_of_pointers(data->env);
+	free_array_of_pointers(data->alias_list);
 }
 
 /**
