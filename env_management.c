@@ -67,7 +67,7 @@ int env_set_key(char *key, char *value, data_of_program *data)
 }
 
 /**
- * env_remove_key = remove a key from the environment
+ * env_remove_key - remove a key from the environment
  * @key: the key to remove
  * @data: the structure of the program's data
  * Return: 1 if the key was removed, 0 if the key does not exis

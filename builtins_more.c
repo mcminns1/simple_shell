@@ -9,6 +9,7 @@
 int builtin_exit(data_of_program *data)
 {
 	int i;
+
 	if (data->tokens[1] != NULL)
 	{
 		for (i = 0; data->tokens[1][i]; i++)
