@@ -17,7 +17,7 @@ int find_program(data_of_program *data)
 		return (2);
 
 	/**if is a full_path or an executable in the same path */
-	if (data->command[0] == '/' || data->command_name[0] == '.')
+	if (data->command_name[0] == '/' || data->command_name[0] == '.')
 		return (check_file(data->command_name));
 	free(data->tokens[0]);
 	data->tokens[0] = str_concat(str_duplicate("/"), data->command_name);
@@ -39,14 +39,14 @@ int find_program(data_of_program *data)
 		{/* the file was found, is not a directory and has execute ppermisions*/
 			errno = 0;
 			free(data->tokens[0]);
-			data->tokens[0] = str_duplicate(direrctories[i]);
+			data->tokens[0] = str_duplicate(directories[i]);
 			free_array_of_pointers(directories);
 			return (ret_code);
 		}
 	}
 	free(data->tokens[0]);
 	data->tokens[0] = NULL;
-	free_array_of_pointers(directoories);
+	free_array_of_pointers(directories);
 	return (ret_code);
 }
 

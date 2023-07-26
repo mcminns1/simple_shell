@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * frere_recurrent_data - frerethe fileds needed each loop
+ * free_recurrent_data - frerethe fileds needed each loop
  * @data: struct of the program's data
  * Return: Noting
  */
-void frere_recurrent_data(data_of_program *data)
+void free_recurrent_data(data_of_program *data)
 {
 	if (data->tokens)
 		free_array_of_pointers(data->tokens);
@@ -25,22 +25,29 @@ void frere_recurrent_data(data_of_program *data)
  * Return: Nothing
  */
 void free_all_data(data_of_program *data)
-	'
-	if (data->file_descriptor != 0)
 {
-	if (close(data->file_descriptor))
-		perror(data->program_name);
-}
-free_recrrent_data(data);
-free_array_of_pointers(data->env);
-free_array_of_pointers(data->alias_list);
+	if (data->file_descriptor != 0)
+	{
+		if (close(data->file_descriptor))
+			perror(data->program_name);
+	}
+	free_recurrent_data(data);
+	free_array_of_pointers(data->env);
+	free_array_of_pointers(data->alias_list);
 }
 
 /**
+<<<<<<< HEAD
  *free_array_of_pointers - frees each pointer of an array of pointers
  *and the array too
  *@array: array of pointers
  *Return: nothing
+=======
+ * free_array_of_pointers - frees each pointer of an
+ * array of pointers and the array too
+ * @array: array of pointers
+ * Return: nothing
+>>>>>>> 74b991a91edca32290dbea6f1161c4d1333a5bc9
  */
 void free_array_of_pointers(char **array)
 {

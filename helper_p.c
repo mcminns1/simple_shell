@@ -16,7 +16,7 @@ int _print(char *string)
  * Return: the number of bytes writed or.
  * On error, -1 is returned , and errno is set appropriatly.
  */
-int _print(char *string)
+int _printe(char *string)
 {
 	return (write(STDERR_FILENO, string, str_length(string)));
 }

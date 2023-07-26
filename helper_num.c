@@ -41,9 +41,9 @@ void long_to_string(long number, char *string, int base)
  * @s: pointer to str origen.
  * Return: int string or 0.
  */
-int atoi(char *s)
+int _atoi(char *s)
 {
-	int sing = 1;
+	int sign = 1;
 	unsigned int number = 0;
 	/*1- analisys sign*/
 	while (!('0' <= *s && *s <= '9') && *s != '\0')
