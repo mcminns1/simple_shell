@@ -87,7 +87,7 @@ int str_compare(char *string1, char *string2, int number)
 		for (iterator = 0; iterator  < number ; iterator++)
 		{
 			if (string1[iterator] != string2[iterator])
-				rerturn (0);
+				return (0);
 		}
 		return (1);
 	}
@@ -98,12 +98,12 @@ int str_compare(char *string1, char *string2, int number)
  * @string2: string to be concatenated
  *
  * Return: pointer to array
- * */
+ */
 char *str_concat(char *string1, char *string2)
 {
 	char *result;
 	int length1 = 0, length2 = 0;
-	
+
 	if (string1 == NULL)
 		string1 = "";
 	length1 = str_length(string1);

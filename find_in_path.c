@@ -22,7 +22,7 @@ int find_program(data_of_program *data)
 	free(data->tokens[0]);
 	data->tokens[0] = str_concat(str_duplicate("/"), data->command_name);
 	if (!data->tokens[0])
-		retur (2);
+		return (2);
 
 	directories = tokenize_path(data);/* search in the PATH */
 
@@ -85,7 +85,7 @@ char **tokenize_path(data_of_program *data)
 	{
 		tokens[i] = str_duplicate(_strtok(NULL, ":"));
 	}
-	
+
 	free(PATH);
 	PATH = NULL;
 	return (tokens);

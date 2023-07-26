@@ -35,7 +35,8 @@ void long_to_string(long number, char *string, int base)
 }
 
 
-/** _atoi - convert a string to an integer.
+/**
+ * atoi - convert a string to an integer.
  *
  * @s: pointer to str origen.
  * Return: int string or 0.

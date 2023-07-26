@@ -1,4 +1,4 @@
-"include "shell.h"
+#include "shell.h"
 
 /**
  * frere_recurrent_data - frerethe fileds needed each loop
@@ -37,9 +37,10 @@ free_array_of_pointers(data->alias_list);
 }
 
 /**
- * free_array_of_pointers - frees each pointer of an array of pointers and the array too
- * @array: array of pointers
- * Return: nothing
+ *free_array_of_pointers - frees each pointer of an array of pointers
+ *and the array too
+ *@array: array of pointers
+ *Return: nothing
  */
 void free_array_of_pointers(char **array)
 {
