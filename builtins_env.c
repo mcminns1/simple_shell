@@ -69,9 +69,9 @@ int builtin_set_env(data_of_program *data)
 }
 
 /**
- * builtin_unset_env - ..
+ * builtin_unset_env - shows the environment where shell runs
  * @data: struct for the program's data
- * @Return: ..
+ * @Return: 0 if success or other  number if its declared in arguments
  */
 
 int builtin_unset_env(data_of_program *data)
