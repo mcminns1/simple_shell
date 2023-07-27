@@ -78,6 +78,9 @@ char **tokenize_path(data_of_program *data)
 		if (PATH[i] == ':')
 			counter_directories++;
 	}
+
+	tokens = malloc(sizeof(char *) *counter_directories);
+
 	/*tokenize and dupllicate each token of path*/
 	i = 0;
 	tokens[i] = str_duplicate(_strtok(PATH, ":"));

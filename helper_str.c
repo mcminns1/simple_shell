@@ -78,7 +78,7 @@ int str_compare(char *string1, char *string2, int number)
 		for (iterator = 0; iterator < number ; iterator++)
 		{
 			if (string1[iterator] != string2[iterator])
-				return (0);
+			return (0);
 		}
 		return (1);
 	}
@@ -121,9 +121,9 @@ char *str_concat(char *string1, char *string2)
 		length1++;
 	}
 
-result[length1] = '\0';
+	result[length1] = '\0';
 
-return (result);
+	return (result);
 }
 
 

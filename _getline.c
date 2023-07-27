@@ -24,15 +24,13 @@ int _getline(data_of_program *data)
 
 		bytes_read = read(data->file_descriptor, &buff, BUFFER_SIZE - 1);
 		if (bytes_read == 0)
-			return (-1);
-
-		buff[bytes_read] = '\0';
+			return (-1);;
 		
 		i = 0;
 		do {
 			array_commands[i] = str_duplicate(_strtok(i ? NULL : buff, "\n;"));
 			i = check_logic_ops(array_commands, i, array_operators);
-		} while (array_commands[i]);
+		} while (array_commands[i++]);
 	}
 
 	data->input_line = array_commands[0];
