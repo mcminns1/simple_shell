@@ -37,6 +37,7 @@ typedef struct info
 	char *input_line;
 	char *command_name;
 	int exec_counter;
+	int file_descriptor;
 	char **tokens;
 	char **env;
 	char **alias_list;
