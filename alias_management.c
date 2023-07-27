@@ -74,7 +74,7 @@ char *get_alias(data_of_program *data, char *name)
 int set_alias(char *alias_string, data_of_program *data)
 {
 	int i, j;
-	char buffer[250] = {'\0'}, *temp = NULL;
+	char buffer[250] = {'0'}, *temp = NULL;
 
 	if (alias_string == NULL || data->alias_list == NULL)
 		return (1);
@@ -84,7 +84,7 @@ int set_alias(char *alias_string, data_of_program *data)
 			buffer[i] = alias_string[i];
 		else
 		{
-			temp = get_alias(data, alias_string + i + i);
+			temp = get_alias(data, alias_string + i + 1);
 			break;
 		}
 

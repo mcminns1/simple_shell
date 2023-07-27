@@ -82,18 +82,6 @@ int str_compare(char *string1, char *string2, int number)
 		}
 		return (1);
 	}
-<<<<<<< HEAD
-	else /* if ther is a number of chars to be compared*/
-	{
-		for (iterator = 0; iterator  < number ; iterator++)
-		{
-			if (string1[iterator] != string2[iterator])
-				return (0);
-		}
-		return (1);
-	}
-=======
->>>>>>> 74b991a91edca32290dbea6f1161c4d1333a5bc9
 }
 /**
  * str_concat - concaenates two strings.
@@ -140,12 +128,12 @@ return (result);
 
 
 /**
- * str_revers - revers a string.
+ * str_reverse - revers a string.
  *
  * @string pointer to string
  * Return: void.
  */
-void str_revers(char *string)
+void str_reverse(char *string)
 {
 	int i = 0, length = str_length(string) - 1;
 	char hold;

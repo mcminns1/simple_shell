@@ -31,6 +31,12 @@
 "	print environment.\n\n"\
 "	the env command will complete list of environment variables.\n\n"\
 
+#define HELP_SETENV_MSG "setenv=\n"\
+"setenv:\tsetenv VARIABLE VALUE\n\n"\
+"	Change or add an environment variable.\n\n"\
+"	initialize a new environment variable, or modify an existing one\n"\
+"	when there are not correct numbers of arguments print error message.\n\n"
+
 #define HELP_UNSETENV_MSG "unsetenv=\n"\
 "unsetenv:\tunsetenv VARIABLE\n\n"\
 "	the unsetenv function deletes one variable from the environment.\n\n"\

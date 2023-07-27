@@ -70,7 +70,7 @@ char **tokenize_path(data_of_program *data)
 		return (NULL);
 	}
 
-	PATH = str_dupllicate(PATH);
+	PATH = str_duplicate(PATH);
 
 	/* find the number of directories in the PATH */
 	for (i = 0; PATH[i]; i++)

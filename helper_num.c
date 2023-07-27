@@ -12,7 +12,7 @@ void long_to_string(long number, char *string, int base)
 {
 	int index = 0, inNegative = 0;
 	long cociente = number;
-	char letters[] = {"123456789abcdef"};
+	char letters[] = {"0123456789abcdef"};
 
 	if (cociente == 0)
 		string[index++] = '0';
@@ -36,7 +36,7 @@ void long_to_string(long number, char *string, int base)
 
 
 /**
- * atoi - convert a string to an integer.
+ * _atoi - convert a string to an integer.
  *
  * @s: pointer to str origen.
  * Return: int string or 0.
