@@ -112,8 +112,8 @@ char *str_concat(char *string1, char *string2)
 	}
 	/* copy of string1*/
 	for (length1 = 0; string1[length1] != '\0'; length1++)
-			result[length1] = string1[length1];
-			free(string1);
+		result[length1] = string1[length1];
+	free(string1);
    /* copy	of string2 */
 	for (length2 = 0; string2[length2] != '\0'; length2++)
 	{

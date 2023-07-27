@@ -199,7 +199,7 @@ char *str_duplicate(char *string);
 int str_compare(char *string1, char *string2, int number);
 
 /* concatenates two strings */
-char *str_concat(char *string1, char string2);
+char *str_concat(char *string1, char *string2);
 
 /* reverse a string */
 void str_reverse(char *string);
